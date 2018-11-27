@@ -1,6 +1,6 @@
 package id.ac.ub.filkom.rendicahya.utils.array.interfaces;
 
-public interface ArrayScalarIntegerMapper {
+public interface ArrayScalarIntMapper {
 
     byte[] operate(byte[] a, byte b, int c);
 

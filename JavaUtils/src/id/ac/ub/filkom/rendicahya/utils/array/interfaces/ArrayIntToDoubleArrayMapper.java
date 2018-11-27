@@ -1,6 +1,6 @@
 package id.ac.ub.filkom.rendicahya.utils.array.interfaces;
 
-public interface ArrayIntegerToDoubleArrayMapper {
+public interface ArrayIntToDoubleArrayMapper {
 
     double[] operate(byte[] a, byte b);
 

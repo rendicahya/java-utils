@@ -1,6 +1,6 @@
 package id.ac.ub.filkom.rendicahya.utils.array.interfaces;
 
-public interface ArrayToIntegerOrDoubleReducer {
+public interface ArrayToIntOrDoubleReducer {
 
     int reduce(byte[] input);
 

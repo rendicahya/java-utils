@@ -1,6 +1,6 @@
 package id.ac.ub.filkom.rendicahya.utils.array.interfaces;
 
-public interface ArrayIntegerMapper {
+public interface ArrayIntMapper {
 
     byte[] operate(byte[] a, int b);
 

@@ -1,6 +1,6 @@
 package id.ac.ub.filkom.rendicahya.utils.matrix.interfaces;
 
-public interface MatrixIntegerMapper {
+public interface MatrixIntMapper {
 
     byte[][] operate(byte[][] a, int b);
 

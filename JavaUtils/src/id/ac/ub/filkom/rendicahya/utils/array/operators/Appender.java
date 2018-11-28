@@ -8,31 +8,85 @@ import id.ac.ub.filkom.rendicahya.utils.array.interfaces.TwoArraysMapper;
 public class Appender implements TwoArraysMapper {
     @Override
     public byte[] operate(byte[] a, byte[] b) {
-        return null;
+        byte arrAppend = new byte[a.length + b.length];
+
+        for (int i = 0; i < arrAppend.length; i++) {
+            if (i < a.length)
+                arrAppend[i] = a[i];
+            else
+                arrAppend[i] = b[i - a.length];
+        }
+
+        return arrAppend;
     }
 
     @Override
     public double[] operate(double[] a, double[] b) {
-        return null;
+        double arrAppend = new double[a.length + b.length];
+
+        for (int i = 0; i < arrAppend.length; i++) {
+            if (i < a.length)
+                arrAppend[i] = a[i];
+            else
+                arrAppend[i] = b[i - a.length];
+        }
+
+        return arrAppend;
     }
 
     @Override
     public float[] operate(float[] a, float[] b) {
-        return null;
+        float arrAppend = new float[a.length + b.length];
+
+        for (int i = 0; i < arrAppend.length; i++) {
+            if (i < a.length)
+                arrAppend[i] = a[i];
+            else
+                arrAppend[i] = b[i - a.length];
+        }
+
+        return arrAppend;
     }
 
     @Override
     public int[] operate(int[] a, int[] b) {
-        return null;
+        int arrAppend = new int[a.length + b.length];
+
+        for (int i = 0; i < arrAppend.length; i++) {
+            if (i < a.length)
+                arrAppend[i] = a[i];
+            else
+                arrAppend[i] = b[i - a.length];
+        }
+
+        return arrAppend;
     }
 
     @Override
     public long[] operate(long[] a, long[] b) {
-        return null;
+        long arrAppend = new long[a.length + b.length];
+
+        for (int i = 0; i < arrAppend.length; i++) {
+            if (i < a.length)
+                arrAppend[i] = a[i];
+            else
+                arrAppend[i] = b[i - a.length];
+        }
+
+        return arrAppend;
     }
 
     @Override
     public short[] operate(short[] a, short[] b) {
-        return null;
+        short arrAppend = new short[a.length + b.length];
+
+        for (int i = 0; i < arrAppend.length; i++) {
+            if (i < a.length)
+                arrAppend[i] = a[i];
+            else
+                arrAppend[i] = b[i - a.length];
+        }
+
+        return arrAppend;
     }
 }

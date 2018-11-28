@@ -2,10 +2,10 @@ package id.ac.ub.filkom.rendicahya.utils.string.operators;
 
 import id.ac.ub.filkom.rendicahya.utils.string.interfaces.StringMapper;
 
-// Input: "foo bar"
-// Output: "Foo Bar"
+// Input: "Foo Bar"
+// Output: "foo bar"
 
 // Input: "foo Bar"
-// Output: "Foo Bar"
-public class WordCapitalizer implements StringMapper {
+// Output: "foo bar"
+public class WordUncapitalizer implements StringMapper {
 }

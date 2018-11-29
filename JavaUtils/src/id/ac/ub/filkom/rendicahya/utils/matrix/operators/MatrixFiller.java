@@ -9,36 +9,65 @@ import id.ac.ub.filkom.rendicahya.utils.matrix.interfaces.MatrixValueMapper;
 // Output: [[3, 3, 3],
 //          [3, 3, 3],
 //          [3, 3, 3]]
-// testing
 public class MatrixFiller implements MatrixValueMapper {
 
     @Override
     public byte[][] operate(byte[][] a, byte b) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        for (int i = 0; i < a.length; i++) {
+            for (int j = 0; j < a[i].length; j++) {
+                a[i][j] = b;
+            }
+        }
+        return a;
     }
 
     @Override
     public short[][] operate(short[][] a, short b) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        for (int i = 0; i < a.length; i++) {
+            for (int j = 0; j < a[i].length; j++) {
+                a[i][j] = b;
+            }
+        }
+        return a;
     }
 
     @Override
     public int[][] operate(int[][] a, int b) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        for (int i = 0; i < a.length; i++) {
+            for (int j = 0; j < a[i].length; j++) {
+                a[i][j] = b;
+            }
+        }
+        return a;
     }
 
     @Override
     public long[][] operate(long[][] a, long b) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        for (int i = 0; i < a.length; i++) {
+            for (int j = 0; j < a[i].length; j++) {
+                a[i][j] = b;
+            }
+        }
+        return a;
     }
 
     @Override
     public float[][] operate(float[][] a, float b) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        for (int i = 0; i < a.length; i++) {
+            for (int j = 0; j < a[i].length; j++) {
+                a[i][j] = b;
+            }
+        }
+        return a;
     }
 
     @Override
     public double[][] operate(double[][] a, double b) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        for (int i = 0; i < a.length; i++) {
+            for (int j = 0; j < a[i].length; j++) {
+                a[i][j] = b;
+            }
+        }
+        return a;
     }
 }

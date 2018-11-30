@@ -3,8 +3,19 @@ package id.ac.ub.filkom.rendicahya.utils.array.operators;
 import id.ac.ub.filkom.rendicahya.utils.array.interfaces.ArrayToDoubleArrayMapper;
 import java.util.Scanner;
 
-// Input: [8, 10, 15, 20]
-// Output: [0, 0.16, 0.58, 1]
+/**
+ * Array Normalizer is used to change an array in any value to array of double.
+ * The output is array of double that the value is vary from 0 to 1 only. 
+ * Inputting value to array is one by one.
+ * E.g :
+ * Input : 4 
+ * 8
+ * 10
+ * 15
+ * 20
+ * Output : {0,0.16,0.58,1}
+ * @author Akbar
+ */
 public class ArrayNormalizer implements ArrayToDoubleArrayMapper {
 
     @Override

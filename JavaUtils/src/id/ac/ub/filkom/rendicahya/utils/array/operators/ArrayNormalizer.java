@@ -23,8 +23,8 @@ public class ArrayNormalizer implements ArrayToDoubleArrayMapper {
         var masukkan = new Scanner(System.in);
 
         int lenght = masukkan.nextInt();
-        int min = Integer.MAX_VALUE;
-        int max = Integer.MIN_VALUE;
+        byte min = Byte.MAX_VALUE;
+        byte max = Byte.MIN_VALUE;
         byte[] inputNum = new byte[lenght];
         double[] outputNum = new double[lenght];
         for (int i = 0; i < inputNum.length; i++) {
@@ -52,8 +52,8 @@ public class ArrayNormalizer implements ArrayToDoubleArrayMapper {
         var masukkan = new Scanner(System.in);
 
         int lenght = masukkan.nextInt();
-        int min = Integer.MAX_VALUE;
-        int max = Integer.MIN_VALUE;
+        short min = Short.MAX_VALUE;
+        short max = Short.MIN_VALUE;
         short[] inputNum = new short[lenght];
         double[] outputNum = new double[lenght];
         for (int i = 0; i < inputNum.length; i++) {

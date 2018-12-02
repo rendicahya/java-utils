@@ -1,7 +1,6 @@
 package id.ac.ub.filkom.rendicahya.utils.array.operators;
 
 import id.ac.ub.filkom.rendicahya.utils.array.interfaces.ArrayToDoubleArrayMapper;
-import java.util.Scanner;
 
 /**
  * Array Normalizer is used to change an array in any value to array of double.
@@ -20,28 +19,20 @@ public class ArrayNormalizer implements ArrayToDoubleArrayMapper {
 
     @Override
     public double[] reduce(byte[] input) {
-        var masukkan = new Scanner(System.in);
-
-        int lenght = masukkan.nextInt();
         byte min = Byte.MAX_VALUE;
         byte max = Byte.MIN_VALUE;
-        byte[] inputNum = new byte[lenght];
-        double[] outputNum = new double[lenght];
-        for (int i = 0; i < inputNum.length; i++) {
-            System.out.print("Masukkan Nilai index ke " + (i + 1) + " : ");
-            inputNum[i] = masukkan.nextByte();
-        }
-        for (int i = 0; i < inputNum.length; i++) {
-            if (min > inputNum[i]) {
-                min = inputNum[i];
+        double[] outputNum = new double[input.length];
+        for (int i = 0; i < input.length; i++) {
+            if (min > input[i]) {
+                min = input[i];
             }
-            if (max < inputNum[i]) {
-                max = inputNum[i];
+            if (max < input[i]) {
+                max = input[i];
             }
         }
-        for (int i = 1; i < inputNum.length; i++) {
+        for (int i = 1; i < input.length; i++) {
             double temp;
-            temp = (double) (inputNum[i] - min) / (max - min);
+            temp = (double) (input[i] - min) / (max - min);
             outputNum[i] = Double.parseDouble(String.format("%.2f", temp));
         }
         return outputNum;
@@ -49,28 +40,20 @@ public class ArrayNormalizer implements ArrayToDoubleArrayMapper {
 
     @Override
     public double[] reduce(short[] input) {
-        var masukkan = new Scanner(System.in);
-
-        int lenght = masukkan.nextInt();
         short min = Short.MAX_VALUE;
         short max = Short.MIN_VALUE;
-        short[] inputNum = new short[lenght];
-        double[] outputNum = new double[lenght];
-        for (int i = 0; i < inputNum.length; i++) {
-            System.out.print("Masukkan Nilai index ke " + (i + 1) + " : ");
-            inputNum[i] = masukkan.nextShort();
-        }
-        for (int i = 0; i < inputNum.length; i++) {
-            if (min > inputNum[i]) {
-                min = inputNum[i];
+        double[] outputNum = new double[input.length];
+        for (int i = 0; i < input.length; i++) {
+            if (min > input[i]) {
+                min = input[i];
             }
-            if (max < inputNum[i]) {
-                max = inputNum[i];
+            if (max < input[i]) {
+                max = input[i];
             }
         }
-        for (int i = 1; i < inputNum.length; i++) {
+        for (int i = 1; i < input.length; i++) {
             double temp;
-            temp = (double) (inputNum[i] - min) / (max - min);
+            temp = (double) (input[i] - min) / (max - min);
             outputNum[i] = Double.parseDouble(String.format("%.2f", temp));
         }
         return outputNum;
@@ -78,28 +61,20 @@ public class ArrayNormalizer implements ArrayToDoubleArrayMapper {
 
     @Override
     public double[] reduce(int[] input) {
-        var masukkan = new Scanner(System.in);
-
-        int lenght = masukkan.nextInt();
         int min = Integer.MAX_VALUE;
         int max = Integer.MIN_VALUE;
-        int[] inputNum = new int[lenght];
-        double[] outputNum = new double[lenght];
-        for (int i = 0; i < inputNum.length; i++) {
-            System.out.print("Masukkan Nilai index ke " + (i + 1) + " : ");
-            inputNum[i] = masukkan.nextInt();
-        }
-        for (int i = 0; i < inputNum.length; i++) {
-            if (min > inputNum[i]) {
-                min = inputNum[i];
+        double[] outputNum = new double[input.length];
+        for (int i = 0; i < input.length; i++) {
+            if (min > input[i]) {
+                min = input[i];
             }
-            if (max < inputNum[i]) {
-                max = inputNum[i];
+            if (max < input[i]) {
+                max = input[i];
             }
         }
-        for (int i = 1; i < inputNum.length; i++) {
+        for (int i = 1; i < input.length; i++) {
             double temp;
-            temp = (double) (inputNum[i] - min) / (max - min);
+            temp = (double) (input[i] - min) / (max - min);
             outputNum[i] = Double.parseDouble(String.format("%.2f", temp));
         }
         return outputNum;
@@ -107,28 +82,20 @@ public class ArrayNormalizer implements ArrayToDoubleArrayMapper {
 
     @Override
     public double[] reduce(long[] input) {
-        var masukkan = new Scanner(System.in);
-
-        int lenght = masukkan.nextInt();
         long min = Long.MAX_VALUE;
         long max = Long.MIN_VALUE;
-        long[] inputNum = new long[lenght];
-        double[] outputNum = new double[lenght];
-        for (int i = 0; i < inputNum.length; i++) {
-            System.out.print("Masukkan Nilai index ke " + (i + 1) + " : ");
-            inputNum[i] = masukkan.nextLong();
-        }
-        for (int i = 0; i < inputNum.length; i++) {
-            if (min > inputNum[i]) {
-                min = inputNum[i];
+        double[] outputNum = new double[input.length];
+        for (int i = 0; i < input.length; i++) {
+            if (min > input[i]) {
+                min = input[i];
             }
-            if (max < inputNum[i]) {
-                max = inputNum[i];
+            if (max < input[i]) {
+                max = input[i];
             }
         }
-        for (int i = 1; i < inputNum.length; i++) {
+        for (int i = 1; i < input.length; i++) {
             double temp;
-            temp = (double) (inputNum[i] - min) / (max - min);
+            temp = (double) (input[i] - min) / (max - min);
             outputNum[i] = Double.parseDouble(String.format("%.2f", temp));
         }
         return outputNum;
@@ -136,28 +103,20 @@ public class ArrayNormalizer implements ArrayToDoubleArrayMapper {
 
     @Override
     public double[] reduce(float[] input) {
-        var masukkan = new Scanner(System.in);
-
-        int lenght = masukkan.nextInt();
         float min = Float.MAX_VALUE;
         float max = Float.MIN_VALUE;
-        float[] inputNum = new float[lenght];
-        double[] outputNum = new double[lenght];
-        for (int i = 0; i < inputNum.length; i++) {
-            System.out.print("Masukkan Nilai index ke " + (i + 1) + " : ");
-            inputNum[i] = masukkan.nextFloat();
-        }
-        for (int i = 0; i < inputNum.length; i++) {
-            if (min > inputNum[i]) {
-                min = inputNum[i];
+        double[] outputNum = new double[input.length];
+        for (int i = 0; i < input.length; i++) {
+            if (min > input[i]) {
+                min = input[i];
             }
-            if (max < inputNum[i]) {
-                max = inputNum[i];
+            if (max < input[i]) {
+                max = input[i];
             }
         }
-        for (int i = 1; i < inputNum.length; i++) {
+        for (int i = 1; i < input.length; i++) {
             double temp;
-            temp = (double) (inputNum[i] - min) / (max - min);
+            temp = (double) (input[i] - min) / (max - min);
             outputNum[i] = Double.parseDouble(String.format("%.2f", temp));
         }
         return outputNum;
@@ -165,28 +124,20 @@ public class ArrayNormalizer implements ArrayToDoubleArrayMapper {
 
     @Override
     public double[] reduce(double[] input) {
-        var masukkan = new Scanner(System.in);
-
-        int lenght = masukkan.nextInt();
         double min = Double.MAX_VALUE;
         double max = Double.MIN_VALUE;
-        double[] inputNum = new double[lenght];
-        double[] outputNum = new double[lenght];
-        for (int i = 0; i < inputNum.length; i++) {
-            System.out.print("Masukkan Nilai index ke " + (i + 1) + " : ");
-            inputNum[i] = masukkan.nextDouble();
-        }
-        for (int i = 0; i < inputNum.length; i++) {
-            if (min > inputNum[i]) {
-                min = inputNum[i];
+        double[] outputNum = new double[input.length];
+        for (int i = 0; i < input.length; i++) {
+            if (min > input[i]) {
+                min = input[i];
             }
-            if (max < inputNum[i]) {
-                max = inputNum[i];
+            if (max < input[i]) {
+                max = input[i];
             }
         }
-        for (int i = 1; i < inputNum.length; i++) {
+        for (int i = 1; i < input.length; i++) {
             double temp;
-            temp = (double) (inputNum[i] - min) / (max - min);
+            temp = (double) (input[i] - min) / (max - min);
             outputNum[i] = Double.parseDouble(String.format("%.2f", temp));
         }
         return outputNum;

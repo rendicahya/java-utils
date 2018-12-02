@@ -6,9 +6,8 @@ import id.ac.ub.filkom.rendicahya.utils.array.interfaces.ArrayScalarMapper;
 // Remove: 2
 // Output: [1, 3, 4]
 /**
- * Program ini digunakan untuk menghapus salah satu nilai pada suatu array
- * input yang dibutuhkan untuk melakukan ini adalah, user menentukan nialai mana
- * yang akan dihilangkan pada array yang telah ditentukan
+ * Program ini digunakan untuk menghapus salah satu nilai pada suatu array.
+ * sesuai yang ditentukan oleh user.
  */
 public class ValueRemover implements ArrayScalarMapper {
 

@@ -2,139 +2,109 @@ package id.ac.ub.filkom.rendicahya.utils.array.operators;
 
 import id.ac.ub.filkom.rendicahya.utils.array.interfaces.TwoArraysMapper;
 
-// Input 1: [1, 2, 3]
-// Input 2: [4, 5, 6]
-// Output: [1, 2, 3, 4, 5, 6]
+/**
+ * The {@code Appender} returned concatenated of arrays.
+ *
+ * <p>
+ * Among the facilities provided by the {@code Appender} class are standard
+ * input, standard output, and error output streams; access to externally
+ * defined properties and environment variables; a means of loading files and
+ * libraries; and a utility method for quickly copying a portion of an array.
+ * </p>
+ * Ex: Input 1: [1, 2, 3] | Input 2: [4, 5, 6] | Output : [1, 2, 3, 4, 5, 6]
+ * 
+ * @author Andrian Roshandy
+ * @since 1.0
+ * @see Appender
+ */
 public class Appender implements TwoArraysMapper {
 
     /**
-     * Concatenate two arrays of BYTE. A new array will be created with length are
-     * combined from both arrays. Then do looping during length of new created
-     * array. Each array index filled into new array, first and second array
-     * continously. Next, the result will be return to the caller method.
+     * The function is to append two arrays of BYTE.
      * 
      * @return Concatenated array of BYTE.
      */
     @Override
     public byte[] operate(byte[] a, byte[] b) {
-        var arrAppend = new byte[a.length + b.length];
+        byte[] arrAppend = new byte[a.length + b.length];
 
-        for (int i = 0; i < arrAppend.length; i++) {
-            if (i < a.length)
-                arrAppend[i] = a[i];
-            else
-                arrAppend[i] = b[i - a.length];
-        }
+        for (int i = 0; i < arrAppend.length; i++)
+            arrAppend[i] = i < a.length ? a[i] : b[i - a.length];
 
         return arrAppend;
     }
 
     /**
-     * Concatenate two arrays of DOUBLE. A new array will be created with length are
-     * combined from both arrays. Then do looping during length of new created
-     * array. Each array index filled into new array, first and second array
-     * continously. Next, the result will be return to the caller method.
+     * The function is to append two arrays of DOUBLE.
      * 
      * @return Concatenated array of DOUBLE.
      */
     @Override
     public double[] operate(double[] a, double[] b) {
-        var arrAppend = new double[a.length + b.length];
+        double[] arrAppend = new double[a.length + b.length];
 
-        for (int i = 0; i < arrAppend.length; i++) {
-            if (i < a.length)
-                arrAppend[i] = a[i];
-            else
-                arrAppend[i] = b[i - a.length];
-        }
+        for (int i = 0; i < arrAppend.length; i++)
+            arrAppend[i] = i < a.length ? a[i] : b[i - a.length];
 
         return arrAppend;
     }
 
     /**
-     * Concatenate two arrays of FLOAT. A new array will be created with length are
-     * combined from both arrays. Then do looping during length of new created
-     * array. Each array index filled into new array, first and second array
-     * continously. Next, the result will be return to the caller method.
+     * The function is to append two arrays of FLOAT.
      * 
      * @return Concatenated array of FLOAT.
      */
     @Override
     public float[] operate(float[] a, float[] b) {
-        var arrAppend = new float[a.length + b.length];
+        float[] arrAppend = new float[a.length + b.length];
 
-        for (int i = 0; i < arrAppend.length; i++) {
-            if (i < a.length)
-                arrAppend[i] = a[i];
-            else
-                arrAppend[i] = b[i - a.length];
-        }
+        for (int i = 0; i < arrAppend.length; i++)
+            arrAppend[i] = i < a.length ? a[i] : b[i - a.length];
 
         return arrAppend;
     }
 
     /**
-     * Concatenate two arrays of INTEGER. A new array will be created with length
-     * are combined from both arrays. Then do looping during length of new created
-     * array. Each array index filled into new array, first and second array
-     * continously. Next, the result will be return to the caller method.
+     * The function is to append two arrays of INTEGER.
      * 
      * @return Concatenated array of INTEGER.
      */
     @Override
     public int[] operate(int[] a, int[] b) {
-        var arrAppend = new int[a.length + b.length];
+        int[] arrAppend = new int[a.length + b.length];
 
-        for (int i = 0; i < arrAppend.length; i++) {
-            if (i < a.length)
-                arrAppend[i] = a[i];
-            else
-                arrAppend[i] = b[i - a.length];
-        }
+        for (int i = 0; i < arrAppend.length; i++)
+            arrAppend[i] = i < a.length ? a[i] : b[i - a.length];
 
         return arrAppend;
     }
 
     /**
-     * Concatenate two arrays of LONG. A new array will be created with length are
-     * combined from both arrays. Then do looping during length of new created
-     * array. Each array index filled into new array, first and second array
-     * continously. Next, the result will be return to the caller method.
+     * Returns appended two arrays of LONG.
      * 
      * @return Concatenated array of LONG.
      */
     @Override
     public long[] operate(long[] a, long[] b) {
-        var arrAppend = new long[a.length + b.length];
+        long[] arrAppend = new long[a.length + b.length];
 
-        for (int i = 0; i < arrAppend.length; i++) {
-            if (i < a.length)
-                arrAppend[i] = a[i];
-            else
-                arrAppend[i] = b[i - a.length];
-        }
+        for (int i = 0; i < arrAppend.length; i++)
+            arrAppend[i] = i < a.length ? a[i] : b[i - a.length];
 
         return arrAppend;
     }
 
     /**
-     * Concatenate two arrays of SHORT. A new array will be created with length are
-     * combined from both arrays. Then do looping during length of new created
-     * array. Each array index filled into new array, first and second array
-     * continously. Next, the result will be return to the caller method.
+     * The function is to append two arrays of SHORT.
      * 
      * @return Concatenated array of SHORT.
      */
     @Override
     public short[] operate(short[] a, short[] b) {
-        var arrAppend = new short[a.length + b.length];
+        short[] arrAppend = new short[a.length + b.length];
 
-        for (int i = 0; i < arrAppend.length; i++) {
-            if (i < a.length)
-                arrAppend[i] = a[i];
-            else
-                arrAppend[i] = b[i - a.length];
-        }
+        for (int i = 0; i < arrAppend.length; i++)
+            arrAppend[i] = i < a.length ? a[i] : b[i - a.length];
 
         return arrAppend;
     }

@@ -25,6 +25,7 @@ public class MatrixColumnRemover implements MatrixIntMapper {
                 }
             }
         }
+        
         return newArray;
     }
 

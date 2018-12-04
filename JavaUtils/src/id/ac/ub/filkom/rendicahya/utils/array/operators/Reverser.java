@@ -14,7 +14,7 @@ public class Reverser implements ArrayMapper {
         a[i] = a[a.length-1-i];  // creates a new array that is in reverse order of the original
         a[a.length-1-i] = reverse[i];
         }
-        return reverse; 
+        return a; 
     }
 
     @Override
@@ -25,7 +25,7 @@ public class Reverser implements ArrayMapper {
         a[i] = a[a.length-1-i];  // creates a new array that is in reverse order of the original
         a[a.length-1-i] = reverse[i];
         }
-        return reverse;
+        return a;
     }
 
     @Override
@@ -36,7 +36,7 @@ public class Reverser implements ArrayMapper {
         a[i] = a[a.length-1-i];  // creates a new array that is in reverse order of the original
         a[a.length-1-i] = reverse[i];
         }
-        return reverse;
+        return a;
     }
 
     @Override
@@ -47,7 +47,7 @@ public class Reverser implements ArrayMapper {
         a[i] = a[a.length-1-i];  // creates a new array that is in reverse order of the original
         a[a.length-1-i] = reverse[i];
         }
-        return reverse;
+        return a;
     }
 
     @Override
@@ -58,7 +58,7 @@ public class Reverser implements ArrayMapper {
         a[i] = a[a.length-1-i];  // creates a new array that is in reverse order of the original
         a[a.length-1-i] = reverse[i];
         }
-        return reverse;
+        return a;
     }
 
     @Override
@@ -69,6 +69,6 @@ public class Reverser implements ArrayMapper {
         a[i] = a[a.length-1-i];  // creates a new array that is in reverse order of the original
         a[a.length-1-i] = reverse[i];
         }
-        return reverse;
+        return a;
     }
 }

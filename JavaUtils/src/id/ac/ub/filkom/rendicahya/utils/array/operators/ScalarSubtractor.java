@@ -30,7 +30,7 @@ public class ScalarSubtractor implements ArrayScalarMapper {
         }
         return a;
     }
-
+    
     @Override
     public long[] operate(long[] a, long b) {
         for (int i = 0; i < a.length; i++) {

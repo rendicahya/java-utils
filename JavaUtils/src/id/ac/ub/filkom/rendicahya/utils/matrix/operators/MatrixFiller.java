@@ -9,6 +9,7 @@ import id.ac.ub.filkom.rendicahya.utils.matrix.interfaces.MatrixValueMapper;
 // Output: [[3, 3, 3],
 //          [3, 3, 3],
 //          [3, 3, 3]]
+// Created by R. Komang Eling Pramuatmaja (185150200111081)
 public class MatrixFiller implements MatrixValueMapper {
 
     @Override

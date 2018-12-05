@@ -9,7 +9,7 @@ import id.ac.ub.filkom.rendicahya.utils.array.interfaces.ArrayScalarMapper;
 /**
  * Dibawah ini adalah method scalarAdder, yaitu menambahkan nilai masing-masing index
  * pada suatu array dengan input yang dituliskan
- * @author Kadaite
+ * @author NaufalHD
  */
 
 public class ScalarAdder implements ArrayScalarMapper {

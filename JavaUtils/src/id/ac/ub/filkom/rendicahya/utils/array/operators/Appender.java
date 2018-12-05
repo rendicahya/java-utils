@@ -38,6 +38,7 @@ public class Appender implements TwoArraysMapper {
     /**
      * The function is to append two arrays of DOUBLE.
      * 
+     * @param two values of DOUBLE arrays.
      * @return Concatenated array of DOUBLE.
      */
     @Override
@@ -53,10 +54,11 @@ public class Appender implements TwoArraysMapper {
     /**
      * The function is to append two arrays of FLOAT.
      * 
+     * @param two values of FLOAT arrays.
      * @return Concatenated array of FLOAT.
      */
     @Override
-    public float[] operate(float[] a, float[] b) { 
+    public float[] operate(float[] a, float[] b) {
         float[] arrAppend = new float[a.length + b.length];
 
         for (int i = 0; i < arrAppend.length; i++)
@@ -68,6 +70,7 @@ public class Appender implements TwoArraysMapper {
     /**
      * The function is to append two arrays of INTEGER.
      * 
+     * @param two values of INTEGER arrays.
      * @return Concatenated array of INTEGER.
      */
     @Override
@@ -81,8 +84,9 @@ public class Appender implements TwoArraysMapper {
     }
 
     /**
-     * Returns appended two arrays of LONG.
+     * The function is to append two arrays of LONG.
      * 
+     * @param two values of LONG arrays.
      * @return Concatenated array of LONG.
      */
     @Override
@@ -98,6 +102,7 @@ public class Appender implements TwoArraysMapper {
     /**
      * The function is to append two arrays of SHORT.
      * 
+     * @param two values of SHORT arrays. >>>>>>>
      * @return Concatenated array of SHORT.
      */
     @Override

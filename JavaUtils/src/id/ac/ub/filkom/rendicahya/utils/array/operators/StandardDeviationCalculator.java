@@ -70,7 +70,6 @@ public class StandardDeviationCalculator implements ArrayToDoubleReducer {
         for(double num : input) {
             sum += num;
         }
-
         double mean = (sum/length);
 
         for(double num: input) {

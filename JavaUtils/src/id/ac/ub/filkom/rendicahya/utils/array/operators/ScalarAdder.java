@@ -6,10 +6,11 @@ import id.ac.ub.filkom.rendicahya.utils.array.interfaces.ArrayScalarMapper;
 // Input 2: 3
 // Output: [4, 5, 6]
 
-/*
-Dibawah ini adalah method scalarAdder, yaitu menambahkan nilai masing-masing index
-pada suatu array dengan input yang dituliskan
-*/
+/**
+ * Dibawah ini adalah method scalarAdder, yaitu menambahkan nilai masing-masing index
+ * pada suatu array dengan input yang dituliskan
+ * @author Kadaite
+ */
 
 public class ScalarAdder implements ArrayScalarMapper {
 

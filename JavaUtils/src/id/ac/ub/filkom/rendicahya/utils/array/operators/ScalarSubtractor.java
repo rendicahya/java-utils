@@ -14,6 +14,11 @@ public class ScalarSubtractor implements ArrayScalarMapper {
             c[i] = (byte) (a[i] - b);
         }
         return c;
+
+        for (int i = 0; i < a.length; i++) {
+            a[i] -= b;
+        }
+        return a;
     }
 
     @Override
@@ -23,6 +28,10 @@ public class ScalarSubtractor implements ArrayScalarMapper {
             c[i] = (short) (a[i] - b);
         }
         return c;
+        for (int i = 0; i < a.length; i++) {
+            a[i] -= b;
+        }
+        return a;
     }
 
     @Override
@@ -41,6 +50,18 @@ public class ScalarSubtractor implements ArrayScalarMapper {
             c[i] = a[i] - b;
         }
         return c;
+        for (int i = 0; i < a.length; i++) {
+            a[i] -= b;
+        }
+        return a;
+    }
+    
+    @Override
+    public long[] operate(long[] a, long b) {
+        for (int i = 0; i < a.length; i++) {
+            a[i] -= b;
+        }
+        return a;
     }
 
     @Override
@@ -50,6 +71,10 @@ public class ScalarSubtractor implements ArrayScalarMapper {
             c[i] = a[i] - b;
         }
         return c;
+        for (int i = 0; i < a.length; i++) {
+            a[i] -= b;
+        }
+        return a;
     }
 
     @Override
@@ -59,5 +84,9 @@ public class ScalarSubtractor implements ArrayScalarMapper {
             c[i] = a[i] - b;
         }
         return c;
+        for (int i = 0; i < a.length; i++) {
+            a[i] -= b;
+        }
+        return a;
     }
 }

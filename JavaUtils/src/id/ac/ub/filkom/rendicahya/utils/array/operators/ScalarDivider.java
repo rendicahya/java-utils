@@ -6,7 +6,6 @@ import id.ac.ub.filkom.rendicahya.utils.array.interfaces.ArrayIntToDoubleArrayMa
 // Input 2: 2
 // Output: [0.5, 1, 1.5]
 public class ScalarDivider implements ArrayIntToDoubleArrayMapper {
-
     @Override
     public double[] operate(byte[] a, byte b) {
         double []divide = new double [a.length];
@@ -63,7 +62,7 @@ public class ScalarDivider implements ArrayIntToDoubleArrayMapper {
         for (int i = 0; i < a.length; i++) {
             divide[i]=a[i];
             divide[i]/=a[i];
-    }
+        }
         return divide;
-}
+    }
 }

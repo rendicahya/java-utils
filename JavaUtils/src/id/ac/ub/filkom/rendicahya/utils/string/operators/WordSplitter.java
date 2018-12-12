@@ -5,4 +5,10 @@ import id.ac.ub.filkom.rendicahya.utils.string.interfaces.StringToStringArrayMap
 // Input: "hello-good_morning everybody"
 // Output: 
 public class WordSplitter implements StringToStringArrayMapper {
+
+    @Override
+    public String[] map(String input) {
+        String[] arr = input.split("");
+        return arr;
+    }
 }
